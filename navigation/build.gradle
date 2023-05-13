@@ -1,0 +1,15 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+dependencies {
+    implementation project(':domain')
+
+    implementation libs.coreKtx
+    implementation libs.appCompat
+    implementation libs.navFrag
+    implementation libs.navUiKtx
+    implementation libs.koinCore
+}

@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Pexels"
+include ':app'
+include ':domain'
+include ':data'
+include ':base'
+include ':navigation'
+include ':feature:main'
+include ':feature:photos'
+include ':feature:videos'
+include ':feature:photo-details'
+include ':file-helper'
+include ':feature:video-details'

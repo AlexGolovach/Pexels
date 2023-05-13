@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolBarTheme" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="fontFamily">@font/aladin</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="Text">
+        <item name="fontFamily">@font/salsa</item>
+    </style>
+
+    <style name="Text.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Text.Gray.16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.White.14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.White.16">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

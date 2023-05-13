@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@id/exo_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/black_60">
+
+        <TextView
+            android:id="@id/exo_position"
+            style="@style/ExoStyledControls.TimeText.Position"
+            android:layout_gravity="top"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@id/exo_duration"
+            style="@style/ExoStyledControls.TimeText.Duration"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp" />
+    </FrameLayout>
+
+    <View
+        android:id="@id/exo_progress_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp" />
+
+    <LinearLayout
+        android:id="@id/exo_center_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layoutDirection="ltr">
+
+        <ImageButton
+            android:id="@+id/exo_rew"
+            style="@style/ExoMediaButton.Rewind"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_exo_rewind" />
+
+        <ImageButton
+            android:id="@id/exo_play_pause"
+            style="@style/ExoStyledControls.Button.Center.PlayPause" />
+
+        <ImageButton
+            android:id="@+id/exo_ffwd"
+            style="@style/ExoMediaButton.FastForward"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_exo_forward" />
+    </LinearLayout>
+</merge>

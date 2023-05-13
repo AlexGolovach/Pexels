@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.renovavision.feature.main.ui.screen.MainScreenFragment">
+
+        <action
+            android:id="@+id/from_main_screen_to_photo_details"
+            app:destination="@id/photo_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/from_main_screen_to_video_details"
+            app:destination="@id/video_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/photo_details"
+        android:name="com.renovavision.photo_details.screen.PhotoDetailsFragment">
+
+        <argument
+            android:name="photo"
+            android:defaultValue="@null"
+            app:argType="com.renovavision.domain.models.Photo"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/video_details"
+        android:name="com.renovavision.video_details.screen.VideoDetailsFragment">
+
+        <argument
+            android:name="video"
+            android:defaultValue="@null"
+            app:argType="com.renovavision.domain.models.Video"
+            app:nullable="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ToolBarTheme"
+            app:menu="@menu/video_details_menu"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/details"
+            app:titleTextAppearance="@style/ToolbarTitle"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:controller_layout_id="@layout/layout_exoplayer_control_view"
+        app:resize_mode="fill"
+        app:show_buffering="when_playing"
+        app:show_fastforward_button="true"
+        app:show_rewind_button="true"
+        app:surface_type="surface_view"
+        app:use_artwork="true"
+        app:use_controller="true" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/Text.Gray.16" />
+
+    <TextView
+        android:id="@+id/tv_author_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/Text.Gray.16" />
+</LinearLayout>

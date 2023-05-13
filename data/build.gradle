@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.devtools.ksp'
+}
+
+dependencies {
+    implementation project(':domain')
+
+    implementation libs.coreKtx
+    implementation libs.coroutines
+    implementation libs.koinCore
+    implementation libs.moshi
+    implementation libs.moshiAdapters
+    implementation libs.okhttp
+    implementation libs.okhttpLoggingInterceptor
+    implementation libs.retrofit
+    implementation libs.retrofitConverterMoshi
+    implementation libs.room
+    implementation libs.roomKtx
+    implementation libs.liveDataKtx
+
+    ksp libs.moshiKotlinCodegen
+    ksp libs.roomCompiler
+}

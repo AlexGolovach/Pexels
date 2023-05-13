@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+dependencies {
+    api libs.coreKtx
+    api libs.appCompat
+    api libs.material
+    api libs.koinCore
+    api libs.koinAndroid
+    api libs.viewBinding
+    api libs.fragmentKtx
+    api libs.navFrag
+    api libs.navUiKtx
+}

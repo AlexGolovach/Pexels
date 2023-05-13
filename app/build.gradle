@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+dependencies {
+    implementation project(':base')
+    implementation project(':data')
+    implementation project(':domain')
+    implementation project(':navigation')
+    implementation project(':file-helper')
+
+    implementation project(':feature:main')
+    implementation project(':feature:photo-details')
+    implementation project(':feature:video-details')
+}

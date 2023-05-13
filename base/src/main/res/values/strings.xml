@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pexels</string>
+    <string name="details">Details</string>
+    <string name="download">Download</string>
+    <string name="share_as_link">Share as link</string>
+    <string name="share">Share</string>
+    <string name="image_description">Description: %s</string>
+    <string name="photographer">Photographer: %s</string>
+    <string name="profile">Profile: %s</string>
+    <string name="error_message">Something went wrong.\n Please try again</string>
+    <string name="try_again">Try again</string>
+</resources>
