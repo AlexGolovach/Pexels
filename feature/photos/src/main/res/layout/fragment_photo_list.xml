@@ -5,12 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.renovavision.base.view.EmptyView
-        android:id="@+id/ev_empty"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone" />
-
     <ProgressBar
         android:id="@+id/pb_progress"
         android:layout_width="wrap_content"
@@ -27,4 +21,10 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_photo"
         tools:visibility="visible" />
+
+    <com.renovavision.base.view.EmptyView
+        android:id="@+id/ev_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
 </FrameLayout>

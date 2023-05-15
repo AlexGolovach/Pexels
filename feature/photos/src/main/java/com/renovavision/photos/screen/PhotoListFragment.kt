@@ -55,7 +55,13 @@ class PhotoListFragment : BaseFragment(R.layout.fragment_photo_list) {
                 if (photosAdapter.itemCount < 1) {
                     evEmpty.hideProgress()
                     evEmpty.visible()
+                    pbProgress.gone()
                     rvPhotos.gone()
+                } else {
+                    pbProgress.gone()
+                    rvPhotos.visible()
+                    evEmpty.gone()
+                    evEmpty.hideProgress()
                 }
             } else {
                 if (photosAdapter.itemCount >= 1) {

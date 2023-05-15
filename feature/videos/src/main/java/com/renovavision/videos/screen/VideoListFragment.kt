@@ -53,7 +53,13 @@ class VideoListFragment : BaseFragment(R.layout.fragment_video_list) {
                 if (videosAdapter.itemCount < 1) {
                     evEmpty.hideProgress()
                     evEmpty.visible()
+                    pbProgress.gone()
                     rvVideos.gone()
+                } else {
+                    pbProgress.gone()
+                    rvVideos.visible()
+                    evEmpty.gone()
+                    evEmpty.hideProgress()
                 }
             } else {
                 if (videosAdapter.itemCount >= 1) {
